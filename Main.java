@@ -28,6 +28,23 @@ public class Main {
         System.out.println("END OF THE PROGRAM");
     }
     public static void main(String[] args) {
-        askForName();
+        // main process
+        String name = "";
+        boolean incorrectNameInput = true;
+
+        // do ask for name, while name input is incorrect
+        do {
+            // ask for name
+            System.out.print("Enter your name: ");
+            name = scanner.nextLine();
+            try {
+                person.setName(name);
+                incorrectNameInput = false;
+            }catch(Error e){
+                // tutuloy pa din yung loop
+            }
+        } while(incorrectNameInput);
+
+        // askForName();
     }
 }
