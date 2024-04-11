@@ -32,9 +32,24 @@ public class Main {
         String name = "";
         boolean incorrectNameInput = true;
 
+        // do-while loop
         // do ask for name, while name input is incorrect
-        do {
-            // ask for name
+        // do {
+        //     // ask for name
+        //     System.out.print("Enter your name: ");
+        //     name = scanner.nextLine();
+        //     try {
+        //         person.setName(name);
+        //         incorrectNameInput = false;
+        //     }catch(Error e){
+        //         // tutuloy pa din yung loop
+        //     }
+        // } while(incorrectNameInput);
+
+        // while-loop
+
+        while(incorrectNameInput){
+            // do something
             System.out.print("Enter your name: ");
             name = scanner.nextLine();
             try {
@@ -43,7 +58,7 @@ public class Main {
             }catch(Error e){
                 // tutuloy pa din yung loop
             }
-        } while(incorrectNameInput);
+        }
 
         // askForName();
     }
